@@ -1,0 +1,199 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    list-style: none;
+    color: #333;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    background-color: #ff5733;
+    padding: 10px 0;
+}
+
+header nav {
+    margin: 0 40px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: url('/back.png') no-repeat center center/cover;
+    color: white;
+    position: relative;
+}
+.hero h1, .hero p {
+    color: white;
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    text-decoration: none;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff5733;
+    color: white;
+}
+
+#services {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff5733;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#about {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff5733;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+footer {
+    padding: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer h2, footer h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer h5 {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #ffcc00;
+}
+
+.food-image {
+    width: 400px; /* Adjust as necessary */
+    height: 300px; /* Adjust as necessary */
+    object-fit: cover; /* Ensures the image fills the specified dimensions without stretching */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
